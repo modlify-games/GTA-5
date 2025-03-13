@@ -22,11 +22,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
+        /* CSS Styles (unchanged) */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', sans-serif; /* Consistent font family */
+            font-family: 'Inter', sans-serif;
         }
 
         :root {
@@ -41,7 +42,7 @@
         body {
             background: var(--dark);
             color: var(--text);
-            font-size: 14px; /* Base font size */
+            font-size: 14px;
             line-height: 1.5;
         }
 
@@ -63,7 +64,7 @@
         }
 
         .back-icon {
-            font-size: 1rem; /* Consistent font size */
+            font-size: 1rem;
             color: var(--text);
             cursor: pointer;
             transition: color 0.3s ease;
@@ -74,7 +75,7 @@
             border-radius: 50px;
             background: rgba(255, 255, 255, 0.1);
             text-decoration: none;
-            font-weight: 500; /* Consistent font weight */
+            font-weight: 500;
         }
 
         .back-icon:hover {
@@ -99,8 +100,8 @@
         .nav-links li a {
             color: var(--text);
             text-decoration: none;
-            font-weight: 500; /* Consistent font weight */
-            font-size: 0.95rem; /* Consistent font size */
+            font-weight: 500;
+            font-size: 0.95rem;
             transition: color 0.3s ease;
         }
 
@@ -141,13 +142,13 @@
         }
 
         .game-details h1 {
-            font-size: 1.5rem; /* Consistent heading size */
+            font-size: 1.5rem;
             margin-bottom: 10px;
-            font-weight: 600; /* Semi-bold for emphasis */
+            font-weight: 600;
         }
 
         .game-details small {
-            font-size: 0.9rem; /* Consistent subtext size */
+            font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.7);
         }
 
@@ -168,6 +169,8 @@
             font-weight: bold;
             transition: background 0.3s ease;
             margin: 10px;
+            cursor: pointer;
+            border: none;
         }
 
         .download-btn:hover {
@@ -191,12 +194,12 @@
         .spec-item h3 {
             color: var(--primary);
             margin-bottom: 10px;
-            font-size: 1rem; /* Consistent font size */
+            font-size: 1rem;
         }
 
         .spec-item p {
             color: var(--text);
-            font-size: 0.8rem; /* Consistent font size */
+            font-size: 0.8rem;
         }
 
         .features {
@@ -204,7 +207,7 @@
         }
 
         .features h2 {
-            font-size: 1.5rem; /* Consistent heading size */
+            font-size: 1.5rem;
             margin-bottom: 15px;
             color: var(--primary);
         }
@@ -234,7 +237,7 @@
         }
 
         .screenshots h2 {
-            font-size: 1.5rem; /* Consistent heading size */
+            font-size: 1.5rem;
             margin-bottom: 15px;
             color: var(--primary);
         }
@@ -274,7 +277,7 @@
         }
 
         .footer-section h3 {
-            font-size: 1rem; /* Consistent heading size */
+            font-size: 1rem;
             margin-bottom: 10px;
             color: var(--primary);
         }
@@ -304,7 +307,7 @@
 
         .social-links a {
             color: var(--text);
-            font-size: 1.2rem; /* Consistent icon size */
+            font-size: 1.2rem;
             transition: color 0.3s ease;
         }
 
@@ -356,7 +359,6 @@
 <body>
     <header class="header">
         <nav class="nav-container">
-            <!-- Back Icon Replaces Logo -->
             <a href="https://www.modlify.fun" class="back-icon">
                 <i class="fas fa-arrow-left"></i> Back to Home
             </a>
@@ -387,14 +389,14 @@
             </div>
         </div>
 
-        <!-- Download Buttons -->
+        <!-- Download Buttons with AdBlueMedia Script -->
         <div class="download-section">
-            <a href="https://installchecker.com/cl/i/x6nx4j" class="download-btn">
+            <button onclick="showContentLocker()" class="download-btn">
                 <i class="fab fa-android"></i> Download for Android
-            </a>
-            <a href="https://installchecker.com/cl/i/x6nx4j" class="download-btn">
+            </button>
+            <button onclick="showContentLocker()" class="download-btn">
                 <i class="fab fa-apple"></i> Download for iOS
-            </a>
+            </button>
         </div>
 
         <!-- Specs Grid -->
@@ -483,7 +485,18 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- AdBlueMedia Script -->
+    <script type="text/javascript">
+        var beYaO_hzP_szYQUc = {"it": 4424460, "key": "ec93e"};
+    </script>
+    <script src="https://d29gqhzevia104.cloudfront.net/7c3ff43.js"></script>
+    <script>
+        function showContentLocker() {
+            _Pg(); // Trigger AdBlueMedia content locker
+        }
+    </script>
+
+    <!-- JavaScript for Mobile Menu and Screenshots -->
     <script>
         // Toggle Mobile Menu
         document.getElementById('menuIcon').addEventListener('click', function() {
