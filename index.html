@@ -389,12 +389,12 @@
             </div>
         </div>
 
-        <!-- Download Buttons with AdBlueMedia Script -->
+        <!-- Download Buttons -->
         <div class="download-section">
             <button onclick="showContentLocker()" class="download-btn">
                 <i class="fab fa-android"></i> Download for Android
             </button>
-            <button onclick="showContentLocker()" class="download-btn">
+            <button onclick="redirectToiOS()" class="download-btn">
                 <i class="fab fa-apple"></i> Download for iOS
             </button>
         </div>
@@ -493,6 +493,11 @@
     <script>
         function showContentLocker() {
             _Pg(); // Trigger AdBlueMedia content locker
+        }
+
+        // Redirect to iOS download link
+        function redirectToiOS() {
+            window.location.href = "https://installchecker.com/cl/i/5k19q6";
         }
     </script>
 
